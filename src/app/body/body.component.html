@@ -1,0 +1,19 @@
+<div *ngIf="current_memory && new_memory === false">
+  <img *ngIf="current_memory.images !== null && current_memory.story === null" id="image-area" [src]="current_memory.images[0]">
+  <div *ngIf="current_memory.images === null && current_memory.story !== null" id="text-area">
+    {{ current_memory.story }}
+  </div>
+  <div *ngIf="current_memory.images !== null && current_memory.story !== null"id="image-and-text-area">
+    <img [src]="current_memory.images[0]" id="sub-image-area">
+    <div id="sub-text-area">
+      {{ current_memory.story }}
+    </div>
+  </div>
+</div>
+<div *ngIf="new_memory !== false" id="new-memory-area">
+
+</div>
+
+
+
+

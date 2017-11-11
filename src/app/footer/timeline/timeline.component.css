@@ -1,0 +1,41 @@
+#timeline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 5px;
+  width: 70%;
+  background-color: #4d4d4d;
+  -webkit-transform: translate(-50%, -50%);
+}
+#leftend {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 40px;
+  height: 5px;
+  background: -webkit-linear-gradient(right, #4d4d4d , transparent);
+}
+#rightend {
+  position: absolute;
+  right: -40px;
+  top: 0;
+  width: 40px;
+  height: 5px;
+  background: -webkit-linear-gradient(left, #4d4d4d , transparent);
+}
+
+.memory {
+  background-color: transparent;
+  position: absolute;
+  top: -10px;
+  width: 9px;
+  height: 24px;
+}
+.inner-memory{
+  background-color: #4d4d4d;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 5px;
+  height: 20px;
+}

@@ -1,0 +1,16 @@
+<div id="timeline">
+  <div id="leftend"></div>
+  <div id="rightend"></div>
+  <div *ngFor="let memory of memories"
+       class="memory"
+       [ngStyle]="{'left': memory.getPX()}"
+       (mouseenter)="memory.toggleHoverState()"
+       (mouseleave)="memory.toggleHoverState()"
+       (click)="setCurrentMemory(memory)">
+    <div class="inner-memory"
+         [@memoryState]="memory.getHoverState()">
+    </div>
+  </div>
+</div>
+
+

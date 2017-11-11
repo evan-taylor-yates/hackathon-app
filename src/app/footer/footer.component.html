@@ -1,0 +1,13 @@
+<div *ngIf="new_memory === false">
+  <app-timeline [memories]="memories"></app-timeline>
+  <img src="../../assets/add.png"
+       id="new-post"
+       (mouseenter)="togglePlusHover()"
+       (mouseleave)="togglePlusHover()"
+       [@plusHover]="plusHoverState"
+       (click)="setNewMemory()">
+</div>
+<div *ngIf="new_memory === true" id="button-group">
+  <div id="cancel-button">Cancel</div>
+  <div id="save-button">Save</div>
+</div>
